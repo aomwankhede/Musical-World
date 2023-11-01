@@ -357,10 +357,11 @@ s0.parentNode.insertBefore(s1,s0);
 	<script>
 		jQuery(document).ready(function ($) {
 			$(".scroll ").click(function (event) {
-				event.preventDefault();
+				// event.preventDefault();
 
 				$('html,body').animate({
-					scrollTop: $(this.hash).offset().top
+					if(this.hash.length>0){
+					scrollTop: $(this.hash).offset().top}
 				}, 1000);
 			});
 			$('#forgot').click(function(){
