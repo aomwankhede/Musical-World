@@ -1,7 +1,7 @@
 <?php
 
 	if(!isset($_SESSION['email_address']))
-		header('location:index.php');
+		header('location:index.html');
 
 	if(!isset($_SESSION)){ 
 	  session_start(); 
@@ -16,7 +16,7 @@
 	$mail->isSMTP();                                      // Set mailer to use SMTP
 	$mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
 	$mail->SMTPAuth = true;                               // Enable SMTP authentication
-	$mail->Username = 'your email address';                 // SMTP username
+	$mail->Username = 'avwankhede_b21@ce.vjti.ac.in';                 // SMTP username
 	$mail->Password = 'smtp password';                           // SMTP password
 	$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
 	$mail->Port = 587;                                    // TCP port to connect to

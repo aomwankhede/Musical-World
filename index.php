@@ -46,7 +46,7 @@ s0.parentNode.insertBefore(s1,s0);
 	<header>
 		<div class="container">
 			<nav class="navbar navbar-expand-lg navbar-light">
-				<a class="navbar-brand" href="index.php">
+				<a class="navbar-brand" href="index.html">
 					Musical World
 				</a>
 				<button class="navbar-toggler ml-lg-auto ml-sm-5" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"

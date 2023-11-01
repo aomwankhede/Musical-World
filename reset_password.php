@@ -3,7 +3,7 @@
   if(!isset($_SESSION))
     session_start();
   if(!isset($_SESSION['email_address']))
-    header('location:index.php');
+    header('location:index.html');
   else{
         if(isset($_POST['reset'])){
 

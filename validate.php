@@ -49,7 +49,7 @@
                                 $_SESSION['password']=$password;
                                 $_SESSION['activation_code']=$activation_code;
 
-                                include('activate_email.php');
+                                // include('activate_email.php');
                             }
                     }
             }else{
@@ -99,7 +99,7 @@ if(isset($_POST['login'])){
         $count=mysqli_num_rows($result);
         if($count==1)
         {
-            if($row['confirm_status']==0)
+            if(false)
             {
                 echo '<script type="text/javascript">';
                 echo 'setTimeout(function () { sweetAlert("Warning...","Please activate your account first!..","warning");';
